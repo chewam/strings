@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: 'Galano Grotesque Regular';
+  src: local('Galano Grotesque Regular'), url('/fonts/GalanoGrotesqueRegular.woff') format('woff');
+}
+
+body {
+  background-color: #f0fbfc;
+  font-family: "Galano Grotesque Regular";
+}
+
+.content {
+  /* background-color: red; */
+  margin: 0 auto;
+}
+
+.logo {
+  background-size: contain;
+  background-image: url(/images/logo.svg);
+}
+
+.home {
+  background-size: contain;
+  background-color: #f0fbfc;
+  background-image: url(/images/background.svg);
+}
+
+.candidates {
+  background-color: #ffffff;
+}
+
+.employers {
+  background-color: #2b2543;
+}
+
+.process {
+  background-color: #df1765;
+}
+
+.it-expertise {
+  background-color: #2b2543;
+}
+
+.team {
+  background-color: #ffffff;
+}
+
+.remote {
+  background-color: #3eb590;
+}
+
+.privacy {
+  background-color: #eba52c;
+}
+
+.contact {
+  background-size: contain;
+  background-color: #2b2543;
+  background-image: url(/images/background.svg);
+}
+
+.chart {
+  background-image: url(/images/employers.svg);
+}
