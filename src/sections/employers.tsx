@@ -1,11 +1,15 @@
 import Image from "next/image";
 
+import companyPicto1 from "../../public/images/companies_picto_1.svg";
+import companyPicto2 from "../../public/images/companies_picto_2.svg";
+import companyPicto3 from "../../public/images/companies_picto_3.svg";
+
 function Employers() {
   return (
     <section id="employers" className="bg-indigo-900">
       <div className="container mx-auto pt-20 flex flex-col items-center">
         <h2 className="mb-12">Companies</h2>
-        <p className="mb-20">
+        <p className="mb-20 text-center">
           Based on their size, our clients can be divided into three groups:
         </p>
         <div className="w-11/12 p-20 bg-indigo-800 ">
@@ -16,7 +20,7 @@ function Employers() {
                 <Image
                   width="70"
                   height="70"
-                  src="/images/companies_picto_1.svg"
+                  src={companyPicto1}
                   alt="companies section first illustration"
                 />
               </div>
@@ -33,7 +37,7 @@ function Employers() {
                 <Image
                   width="140"
                   height="140"
-                  src="/images/companies_picto_2.svg"
+                  src={companyPicto2}
                   alt="companies section first illustration"
                 />
               </div>
@@ -50,7 +54,7 @@ function Employers() {
                 <Image
                   width="200"
                   height="200"
-                  src="/images/companies_picto_3.svg"
+                  src={companyPicto3}
                   alt="companies section first illustration"
                 />
               </div>

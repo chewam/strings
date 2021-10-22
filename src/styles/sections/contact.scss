@@ -1,0 +1,20 @@
+#contact {
+  @apply bg-indigo-900 flex text-white bg-contain bg-no-repeat bg-bottom;
+
+  background-image: url("/images/background.svg");
+
+  .networks {
+    @apply flex;
+  }
+}
+
+.marker {
+  @apply bg-red-500;
+
+  width: 90px;
+  height: 90px;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  background-position: center;
+  mask-image: url("/images/map_marker.svg");
+}

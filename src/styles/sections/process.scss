@@ -1,0 +1,15 @@
+#process {
+  @apply text-white;
+
+  background: linear-gradient(180deg, rgb(223 23 101 / 100%) 86%, rgb(43 37 67 / 100%) 86%);
+
+  .grid {
+    .tile {
+      @apply flex flex-col items-center;
+
+      .number {
+        @apply bg-indigo-900 rounded-full w-14 py-3 text-center font-semibold text-2xl;
+      }
+    }
+  }
+}

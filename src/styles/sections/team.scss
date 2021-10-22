@@ -1,0 +1,31 @@
+#team {
+  @apply pb-2;
+
+  background: linear-gradient(180deg, rgb(43 37 67 / 100%) 84%, rgb(62 181 144 / 100%) 84%);
+
+  .grid {
+    .tile {
+      @apply bg-cyan-100 flex flex-col items-center px-12 pb-0;
+
+      .picture {
+        @apply relative -top-5;
+      }
+
+      .bracket {
+        @apply text-red-500 font-semibold text-4xl transform rotate-90;
+      }
+
+      .name {
+        @apply font-semibold text-lg mt-3 mb-2;
+      }
+
+      .networks {
+        @apply flex mt-5;
+
+        & > div {
+          @apply mx-2 px-2 py-1 relative top-3 shadow w-12 h-12 bg-center bg-contain;
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,13 @@
 @use "colors";
+@use "sections/team";
+@use "sections/remote";
+@use "sections/contact";
+@use "sections/privacy";
+@use "sections/process";
 @use "components/header";
-
-body {
-  background-color: #f0fbfc;
-}
+@use "sections/employers";
+@use "sections/candidates";
+@use "sections/it-expertise";
 
 button {
   @apply
@@ -36,98 +40,10 @@ button {
   }
 
   &.big {
-    @apply py-3 px-8;
+    @apply py-3 px-8 text-2xl;
   }
 }
 
 input {
   @apply px-4 py-2 bg-transparent border-b-4 border-red-500;
-}
-
-#candidates {
-  background: linear-gradient(180deg, rgb(240 251 252 / 100%) 93%, rgb(49 46 129 / 100%) 93%);
-
-  .grid {
-    & > div {
-      @apply shadow-md p-2 text-red-500 font-semibold text-2xl;
-
-      & > div {
-        @apply text-3xl text-black;
-      }
-    }
-  }
-}
-
-#employers {
-  @apply text-white;
-
-  background: linear-gradient(180deg, rgb(49 46 129 / 100%) 93%, rgb(223 23 101 / 100%) 93%);
-
-  .chart {
-    @apply flex items-end;
-
-    .bar {
-      @apply relative z-10 flex-1 mr-4 px-4 rounded-t-full flex items-end justify-center text-2xl;
-
-      &::before {
-        @apply flex-1 rounded-t-full;
-
-        bottom: 0;
-        left: 2px;
-        right: 2px;
-        top: 2.5rem;
-        content: "";
-        z-index: -1;
-        position: absolute;
-      }
-
-      &.yellow {
-        @apply bg-yellow-500  bg-opacity-40;
-
-        &::before {
-          @apply bg-yellow-500;
-        }
-      }
-
-      &.green {
-        @apply bg-green-500  bg-opacity-40;
-
-        &::before {
-          @apply bg-green-500;
-        }
-      }
-
-      &.red {
-        @apply bg-red-500  bg-opacity-40;
-
-        &::before {
-          @apply bg-red-500;
-        }
-      }
-    }
-
-    .company {
-      @apply flex flex-col justify-end mr-10;
-
-      .type {
-        @apply text-xl font-semibold mb-2 whitespace-nowrap;
-      }
-
-      &:last-child {
-        @apply mr-0;
-      }
-    }
-  }
-}
-
-#process {
-  @apply text-white;
-
-  background: linear-gradient(180deg, rgb(223 23 101 / 100%) 93%, rgb(49 46 129 / 100%) 93%);
-}
-
-.contact {
-  background-size: contain;
-  background-color: colors.$purple;
-  background-image: url("/images/background.svg");
 }

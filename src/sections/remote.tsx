@@ -1,44 +1,59 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import remote from "../../public/images/remote.svg";
+
 function Remote() {
   return (
-    <section id="remote" className="bg-green-500">
-      <div className="container mx-auto">
-        <div className="title">Remote</div>
-        <p>
-          Looking for a remote job and/or freelance projects? Let us help you
-          out:
-        </p>
-        <form>
-          <input />
-          <input />
-          <input />
-          <textarea></textarea>
-          <div>
-            <input type="checkbox" />
-            <div>
-              I agree with your{" "}
-              <Link href="/privacy-policy">
-                <a>Privacy Policy</a>
-              </Link>
+    <section id="remote">
+      <div className="container mx-auto p-10 flex">
+        <div className="flex-1 pr-10">
+          <h2 className="mb-5">Remote</h2>
+          <p className="mb-10">
+            Looking for a remote job and/or freelance projects?
+            <br />
+            Let us help you out:
+          </p>
+          <form>
+            <div className="fields">
+              <input placeholder="NAME" />
+              <input placeholder="EMAIL" />
+              <input placeholder="CV" />
+              <input placeholder="PORTFOLIO" />
             </div>
-          </div>
-          <div>
-            <input type="checkbox" />
-            <div>
-              I want to receive regular updates, regarding similar and
-              higher-paid job opportunities in the future.
+            <div className="checkboxes">
+              <div className="checkbox">
+                <label>
+                  <span>
+                    I agree with your{" "}
+                    <Link href="/privacy-policy">
+                      <a>Privacy Policy</a>
+                    </Link>
+                  </span>
+                  <input type="checkbox" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div className="checkbox">
+                <label>
+                  I want to receive regular updates, regarding similar and
+                  higher-paid job opportunities in the future.
+                  <input type="checkbox" />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
             </div>
-          </div>
-          <button>Submit</button>
-        </form>
-        <Image
-          width="400"
-          height="600"
-          src="/images/remote.svg"
-          alt="remote section illustration"
-        />
+            <button className="big secondary flex-initial">Submit</button>
+          </form>
+        </div>
+        <div className="flex-1 flex items-start">
+          <Image
+            width="800"
+            height="800"
+            src={remote}
+            alt="remote section illustration"
+          />
+        </div>
       </div>
     </section>
   );

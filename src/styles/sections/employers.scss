@@ -1,0 +1,61 @@
+#employers {
+  @apply text-white;
+
+  background: linear-gradient(180deg, rgb(43 37 67 / 100%) 93%, rgb(223 23 101 / 100%) 93%);
+
+  .chart {
+    @apply flex items-end;
+
+    .bar {
+      @apply relative z-10 flex-1 mr-4 px-4 rounded-t-full flex items-end justify-center text-2xl;
+
+      &::before {
+        @apply flex-1 rounded-t-full;
+
+        bottom: 0;
+        left: 2px;
+        right: 2px;
+        top: 2.5rem;
+        content: "";
+        z-index: -1;
+        position: absolute;
+      }
+
+      &.yellow {
+        @apply bg-yellow-500  bg-opacity-40;
+
+        &::before {
+          @apply bg-yellow-500;
+        }
+      }
+
+      &.green {
+        @apply bg-green-600  bg-opacity-40;
+
+        &::before {
+          @apply bg-green-600;
+        }
+      }
+
+      &.red {
+        @apply bg-red-500  bg-opacity-40;
+
+        &::before {
+          @apply bg-red-500;
+        }
+      }
+    }
+
+    .company {
+      @apply flex flex-col justify-end mr-10;
+
+      .type {
+        @apply text-xl font-semibold mb-2 whitespace-nowrap;
+      }
+
+      &:last-child {
+        @apply mr-0;
+      }
+    }
+  }
+}

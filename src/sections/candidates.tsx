@@ -1,7 +1,7 @@
 function Candidates() {
   return (
     <section id="candidates">
-      <div className="container mx-auto bg-white shadow-2xl p-20 flex flex-col items-center">
+      <div className="container mx-auto bg-white shadow-xl p-20 flex flex-col items-center">
         <h2 className="mb-12">Candidates</h2>
         <p className="mb-20">These are the profiles we look for most often:</p>
         <div className="grid grid-rows-2 grid-flow-col gap-4 mb-20">

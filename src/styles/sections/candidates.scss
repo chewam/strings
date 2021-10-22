@@ -1,0 +1,13 @@
+#candidates {
+  background: linear-gradient(180deg, rgb(240 251 252 / 100%) 93%, rgb(43 37 67 / 100%) 93%);
+
+  .grid {
+    & > div {
+      @apply shadow-md p-2 text-red-500 font-semibold text-2xl;
+
+      & > div {
+        @apply text-3xl text-black;
+      }
+    }
+  }
+}
