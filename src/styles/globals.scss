@@ -1,0 +1,56 @@
+@use "fonts";
+@use "colors";
+@use "components/header";
+
+body {
+  background-color: #f0fbfc;
+  font-family: "Galano Grotesque Regular", sans-serif;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.home {
+  background-size: contain;
+  background-color: #f0fbfc;
+  background-image: url("/images/background.svg");
+}
+
+.candidates {
+  background-color: colors.$white;
+}
+
+.employers {
+  background-color: colors.$purple;
+}
+
+.process {
+  background-color: colors.$red;
+}
+
+.it-expertise {
+  background-color: colors.$purple;
+}
+
+.team {
+  background-color: colors.$white;
+}
+
+.remote {
+  background-color: colors.$green;
+}
+
+.privacy {
+  background-color: colors.$orange;
+}
+
+.contact {
+  background-size: contain;
+  background-color: colors.$purple;
+  background-image: url("/images/background.svg");
+}
+
+.chart {
+  background-image: url("/images/employers.svg");
+}
