@@ -1,56 +1,133 @@
-@use "fonts";
 @use "colors";
 @use "components/header";
 
 body {
   background-color: #f0fbfc;
-  font-family: "Galano Grotesque Regular", sans-serif;
 }
 
-.content {
-  margin: 0 auto;
+button {
+  @apply
+    py-1
+    px-4
+    border-2
+    bg-red-500
+    text-white
+    font-semibold
+    border-red-500
+    shadow-btn-red
+    hover:bg-red-700
+    focus:ring-2
+    focus:outline-none
+    focus:ring-red-400
+    focus:ring-opacity-75;
+
+  &.secondary {
+    @apply
+      bg-white
+      border-2
+      shadow-none
+      text-red-500
+      border-red-500
+      hover:bg-red-700
+      focus:ring-2
+      focus:outline-none
+      focus:ring-red-400
+      focus:ring-opacity-75;
+  }
+
+  &.big {
+    @apply py-3 px-8;
+  }
 }
 
-.home {
-  background-size: contain;
-  background-color: #f0fbfc;
-  background-image: url("/images/background.svg");
+input {
+  @apply px-4 py-2 bg-transparent border-b-4 border-red-500;
 }
 
-.candidates {
-  background-color: colors.$white;
+#candidates {
+  background: linear-gradient(180deg, rgb(240 251 252 / 100%) 93%, rgb(49 46 129 / 100%) 93%);
+
+  .grid {
+    & > div {
+      @apply shadow-md p-2 text-red-500 font-semibold text-2xl;
+
+      & > div {
+        @apply text-3xl text-black;
+      }
+    }
+  }
 }
 
-.employers {
-  background-color: colors.$purple;
+#employers {
+  @apply text-white;
+
+  background: linear-gradient(180deg, rgb(49 46 129 / 100%) 93%, rgb(223 23 101 / 100%) 93%);
+
+  .chart {
+    @apply flex items-end;
+
+    .bar {
+      @apply relative z-10 flex-1 mr-4 px-4 rounded-t-full flex items-end justify-center text-2xl;
+
+      &::before {
+        @apply flex-1 rounded-t-full;
+
+        bottom: 0;
+        left: 2px;
+        right: 2px;
+        top: 2.5rem;
+        content: "";
+        z-index: -1;
+        position: absolute;
+      }
+
+      &.yellow {
+        @apply bg-yellow-500  bg-opacity-40;
+
+        &::before {
+          @apply bg-yellow-500;
+        }
+      }
+
+      &.green {
+        @apply bg-green-500  bg-opacity-40;
+
+        &::before {
+          @apply bg-green-500;
+        }
+      }
+
+      &.red {
+        @apply bg-red-500  bg-opacity-40;
+
+        &::before {
+          @apply bg-red-500;
+        }
+      }
+    }
+
+    .company {
+      @apply flex flex-col justify-end mr-10;
+
+      .type {
+        @apply text-xl font-semibold mb-2 whitespace-nowrap;
+      }
+
+      &:last-child {
+        @apply mr-0;
+      }
+    }
+  }
 }
 
-.process {
-  background-color: colors.$red;
-}
+#process {
+  @apply text-white;
 
-.it-expertise {
-  background-color: colors.$purple;
-}
-
-.team {
-  background-color: colors.$white;
-}
-
-.remote {
-  background-color: colors.$green;
-}
-
-.privacy {
-  background-color: colors.$orange;
+  background: linear-gradient(180deg, rgb(223 23 101 / 100%) 93%, rgb(49 46 129 / 100%) 93%);
 }
 
 .contact {
   background-size: contain;
   background-color: colors.$purple;
   background-image: url("/images/background.svg");
-}
-
-.chart {
-  background-image: url("/images/employers.svg");
 }

@@ -3,8 +3,8 @@ import Image from "next/image";
 function Process() {
   return (
     <section id="process" className="process">
-      <div className="content max-w-screen-xl">
-        <div className="title">Process</div>
+      <div className="container mx-auto pt-20 flex flex-col items-center">
+        <h2 className="mb-12">Process</h2>
         <div>
           <div>
             <div>1</div>

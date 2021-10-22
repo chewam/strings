@@ -1,7 +1,7 @@
 function Contact() {
   return (
-    <section id="contact" className="contact">
-      <div className="content max-w-screen-xl">
+    <section id="contact" className="">
+      <div className="container mx-auto">
         <div className="title">
           Strings IT Recruitment 4 Iskar Str. 1000 Sofia, Bulgaria
         </div>

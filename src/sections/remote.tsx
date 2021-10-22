@@ -3,8 +3,8 @@ import Image from "next/image";
 
 function Remote() {
   return (
-    <section id="remote" className="remote">
-      <div className="content max-w-screen-xl">
+    <section id="remote" className="bg-green-500">
+      <div className="container mx-auto">
         <div className="title">Remote</div>
         <p>
           Looking for a remote job and/or freelance projects? Let us help you

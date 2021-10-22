@@ -3,7 +3,7 @@ import Image from "next/image";
 function ITExpertise() {
   return (
     <section id="it-expertise" className="it-expertise">
-      <div className="content max-w-screen-xl">
+      <div className="container mx-auto">
         <div className="title">IT Expertise</div>
         <p>
           The meetings with our candidates occur in the presence of at least one

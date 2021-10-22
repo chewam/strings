@@ -3,7 +3,7 @@ import Image from "next/image";
 function Team() {
   return (
     <section id="team" className="team">
-      <div className="content max-w-screen-xl">
+      <div className="container mx-auto">
         <div className="title">The Team</div>
         <div>
           <div>

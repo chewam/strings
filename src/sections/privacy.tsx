@@ -4,7 +4,7 @@ import Image from "next/image";
 function Privacy() {
   return (
     <section id="privacy" className="privacy">
-      <div className="content max-w-screen-xl">
+      <div className="container mx-auto">
         <div className="title">Remote</div>
         <p>
           Our activities are GDPR-compliant. In fact, we are also a registered

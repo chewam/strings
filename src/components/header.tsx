@@ -4,12 +4,12 @@ import Image from "next/image";
 function Header() {
   return (
     <header>
-      <div className="content flex max-w-screen-xl">
+      <div className="container mx-auto flex items-center">
         <Image
-          width="150"
-          height="150"
-          src="/images/logo.svg"
+          width="120"
+          height="120"
           alt="company logo"
+          src="/images/logo.svg"
         />
         <nav className="flex-1 flex justify-evenly">
           <Link href="#home">
@@ -36,9 +36,9 @@ function Header() {
           <Link href="#contact">
             <a>Contact</a>
           </Link>
-          <button>Submit CV</button>
-          <button>IT Jobs</button>
         </nav>
+        <button className="secondary mr-4">Submit CV</button>
+        <button>IT Jobs</button>
       </div>
     </header>
   );
