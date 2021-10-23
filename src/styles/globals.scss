@@ -1,15 +1,11 @@
 @use "colors";
-@use "sections/team";
-@use "sections/remote";
-@use "sections/contact";
-@use "sections/privacy";
-@use "sections/process";
 @use "components/header";
-@use "sections/employers";
-@use "sections/candidates";
-@use "sections/it-expertise";
+@use "components/form";
+@use "pages/index";
+@use "pages/privacy-policy";
 
-button {
+button,
+.btn {
   @apply
     py-1
     px-4

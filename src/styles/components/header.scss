@@ -4,7 +4,11 @@ header {
     background-image: url("/images/logo.svg");
   }
 
-  a {
-    @apply flex items-center;
+  nav {
+    @apply mx-4;
+
+    a {
+      @apply flex items-center text-black text-sm font-semibold;
+    }
   }
 }

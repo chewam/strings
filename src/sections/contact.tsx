@@ -36,9 +36,7 @@ function Contact() {
             </div>
           </div>
           <button className="big mb-40">Search jobs</button>
-          <div className="text-sm">
-            Pull The Strings 2021 © All rights reserved
-          </div>
+          <div className="text-sm">Strings 2021 © All rights reserved</div>
         </div>
       </div>
       <div className="flex-1 bg-cyan-100">
