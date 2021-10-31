@@ -80,5 +80,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-// "btn-red": "0 0 5px 2px rgba(223, 23, 101, 0.49)"

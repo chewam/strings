@@ -1,0 +1,31 @@
+.job-view {
+  @apply flex;
+
+  .center {
+    @apply flex-1 mx-20;
+
+    .intro {
+      @apply my-10;
+    }
+  }
+
+  h2 {
+    @apply my-5;
+  }
+
+  h3 {
+    @apply my-2;
+  }
+
+  p {
+    @apply mb-2;
+  }
+
+  ul {
+    list-style: circle;
+
+    li {
+      @apply ml-5;
+    }
+  }
+}

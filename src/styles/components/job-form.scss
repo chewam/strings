@@ -1,0 +1,11 @@
+.job-form {
+  @apply flex flex-col;
+
+  label {
+    @apply flex flex-col mb-5;
+
+    input, textarea {
+      @apply flex-1 bg-cyan-100 mt-1;
+    }
+  }
+}

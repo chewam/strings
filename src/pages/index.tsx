@@ -11,7 +11,7 @@ import Privacy from "../sections/privacy";
 
 function Page() {
   return (
-    <div>
+    <>
       <Header />
       <Home />
       <Candidates />
@@ -22,7 +22,7 @@ function Page() {
       <Remote />
       <Privacy />
       <Contact />
-    </div>
+    </>
   );
 }
 

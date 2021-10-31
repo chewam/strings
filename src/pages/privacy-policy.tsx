@@ -58,7 +58,9 @@ function Page() {
           <address className="mb-10">
             Sofia, Bulgaria, 4 Iskar Str., 3rd floor.
             <br />
-            <a href="privacy@pullthestrings.me">privacy@pullthestrings.me</a>
+            <a href="mailto:privacy@pullthestrings.me">
+              privacy@pullthestrings.me
+            </a>
           </address>
           <h2>Whose personal data we process</h2>
           <p>
@@ -209,7 +211,7 @@ function Page() {
             If you wish to access, delete or correct your personal information
             please, address your requests and complaints to: Sofia, Bulgaria, 4
             Iskar Str., 3rd floor or{" "}
-            <a href="dataadmin@pullthestrings.me">
+            <a href="mailto:dataadmin@pullthestrings.me">
               dataadmin@pullthestrings.me
             </a>
             .

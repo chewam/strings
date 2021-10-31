@@ -46,6 +46,10 @@ form {
     }
   }
 
+  textarea {
+    @apply border-red-500 border-b-4 p-2;
+  }
+
   button {
     @apply mt-2 flex-none shadow-lg border-white;
   }
