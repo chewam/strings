@@ -1,6 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-import Form from "../components/form";
+import ContactForm from "../components/contact-form";
 
 import remote from "../../public/images/remote.svg";
 
@@ -15,7 +14,7 @@ function Remote() {
             <br />
             Let us help you out:
           </p>
-          <Form />
+          <ContactForm />
         </div>
         <div className="flex-1 flex items-start">
           <Image

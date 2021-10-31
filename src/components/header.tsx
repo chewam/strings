@@ -37,7 +37,9 @@ function Header() {
         <Link href="/submit-cv">
           <a className="btn secondary mr-4">Submit CV</a>
         </Link>
-        <button>IT Jobs</button>
+        <Link href="/jobs">
+          <a className="btn">IT Jobs</a>
+        </Link>
       </div>
     </header>
   );

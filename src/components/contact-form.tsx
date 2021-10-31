@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ChangeEvent, FormEvent, useState } from "react";
 import UploadField from "./upload-field";
 
-const Form = () => {
+const ContactForm = () => {
   const [cv, setCV] = useState<File>();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -109,4 +109,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default ContactForm;

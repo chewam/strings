@@ -1,6 +1,6 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
-import Form from "../components/form";
+import ContactForm from "../components/contact-form";
 
 function Page() {
   return (
@@ -14,7 +14,7 @@ function Page() {
             sure to follow up with more relevant options.
           </p>
           <div className="mx-40">
-            <Form />
+            <ContactForm />
           </div>
         </div>
       </div>
