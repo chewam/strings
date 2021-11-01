@@ -3,7 +3,7 @@ import type { File } from "formidable";
 import { withSentry } from "@sentry/nextjs";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import sendMail from "../../utils/send-mail";
+import sendMail from "@/utils/send-mail";
 
 export const config = {
   api: { bodyParser: false },

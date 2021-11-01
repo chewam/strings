@@ -2,13 +2,13 @@ import useSWR, { SWRConfig } from "swr";
 import { useRouter } from "next/router";
 import { GetStaticProps, GetStaticPaths } from "next";
 
-import Job from "../../components/job";
-import fetcher from "../../utils/fetcher";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import { getJobById } from "../../services/jobs";
-import Container from "../../components/container";
-import ContactForm from "../../components/contact-form";
+import Job from "@/components/job";
+import fetcher from "@/utils/fetcher";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { getJobById } from "@/services/jobs";
+import Container from "@/components/container";
+import ContactForm from "@/components/contact-form";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {

@@ -2,12 +2,12 @@ import Link from "next/link";
 import { GetStaticProps } from "next";
 import useSWR, { SWRConfig } from "swr";
 
-import fetcher from "../../utils/fetcher";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import { getJobs } from "../../services/jobs";
-import JobsList from "../../components/jobs-list";
-import Container from "../../components/container";
+import fetcher from "@/utils/fetcher";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import { getJobs } from "@/services/jobs";
+import JobsList from "@/components/jobs-list";
+import Container from "@/components/container";
 
 export const getStaticProps: GetStaticProps = async () => {
   const jobs = await getJobs();

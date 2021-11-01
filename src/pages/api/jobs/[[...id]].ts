@@ -1,11 +1,7 @@
 import { withSentry } from "@sentry/nextjs";
 import type { NextApiRequest, NextApiResponse } from "next";
-import {
-  getJobs,
-  createJob,
-  updateJob,
-  getJobById,
-} from "../../../services/jobs";
+
+import { getJobs, createJob, updateJob, getJobById } from "@/services/jobs";
 
 const Job = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "GET") {
