@@ -8,7 +8,9 @@ import Footer from "../../components/footer";
 import JobsList from "../../components/jobs-list";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await fetch("http://localhost:3000/api/jobs");
+  const data = await fetch("https://strings-kappa.vercel.app/api/jobs");
+  console.log("DATA", data);
+
   const jobs = await data.json();
 
   return {
