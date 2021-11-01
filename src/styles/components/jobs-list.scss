@@ -1,13 +1,15 @@
-.job {
-  .btn {
-    display: none;
-  }
-
-  &:hover {
-    @apply bg-white shadow-lg;
-
+.jobs-list {
+  .job {
     .btn {
-      display: block;
+      display: none;
+    }
+
+    &:hover {
+      @apply bg-white shadow-lg;
+
+      .btn {
+        display: block;
+      }
     }
   }
 }

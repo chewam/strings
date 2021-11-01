@@ -1,12 +1,13 @@
+import Link from "next/link";
 import { GetStaticProps } from "next";
 import useSWR, { SWRConfig } from "swr";
 
-import Page from "../../components/page";
 import fetcher from "../../utils/fetcher";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { getJobs } from "../../services/jobs";
 import JobsList from "../../components/jobs-list";
+import Container from "../../components/container";
 
 export const getStaticProps: GetStaticProps = async () => {
   const jobs = await getJobs();
@@ -35,11 +36,16 @@ const Jobs = ({ fallback = {} }: { fallback: Record<string, Job[]> }) => {
   return (
     <>
       <Header />
-      <Page>
+      <Container>
+        <div className="flex flex-row-reverse mb-5">
+          <Link href="/jobs/new">
+            <a className="btn admin">Add job</a>
+          </Link>
+        </div>
         <SWRConfig value={{ fallback }}>
           <JobListLoader />
         </SWRConfig>
-      </Page>
+      </Container>
       <Footer />
     </>
   );

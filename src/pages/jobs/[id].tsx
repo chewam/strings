@@ -2,12 +2,12 @@ import useSWR, { SWRConfig } from "swr";
 import { useRouter } from "next/router";
 import { GetStaticProps, GetStaticPaths } from "next";
 
-import Page from "../../components/page";
+import Job from "../../components/job";
 import fetcher from "../../utils/fetcher";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
-import JobView from "../../components/job-view";
 import { getJobById } from "../../services/jobs";
+import Container from "../../components/container";
 import ContactForm from "../../components/contact-form";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-const JobViewLoader = () => {
+const JobLoader = () => {
   const router = useRouter();
   const { id } = router.query;
   const { data: job, error } = useSWR(id ? `/api/jobs/${id}` : null, fetcher);
@@ -38,19 +38,19 @@ const JobViewLoader = () => {
   if (error) return <div>failed to load job data</div>;
   if (!job) return <div>loading...</div>;
 
-  return <JobView job={job} />;
+  return <Job job={job} />;
 };
 
-const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
+const Page = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
   return (
     <>
       <Header />
       <section className="job">
-        <Page>
+        <Container>
           <SWRConfig value={{ fallback }}>
-            <JobViewLoader />
+            <JobLoader />
           </SWRConfig>
-        </Page>
+        </Container>
       </section>
       <section className="bg-indigo-900 text-white py-10">
         <div
@@ -72,4 +72,4 @@ const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
   );
 };
 
-export default Job;
+export default Page;

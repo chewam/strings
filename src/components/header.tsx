@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import logo from "../../public/images/logo.svg";
 
-function Header() {
+function Header({ noBackground = false }: { noBackground?: boolean }) {
   return (
-    <header>
+    <header className={noBackground ? "no-background" : ""}>
       <div className="container mx-auto flex items-center">
         <Image width="120" height="120" alt="company logo" src={logo} />
         <nav className="flex-1 flex justify-evenly">

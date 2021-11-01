@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
 const defaultValues = {
@@ -10,7 +11,8 @@ const defaultValues = {
   description: "",
 };
 
-const JobForm = ({ job = defaultValues }: { job: Job }) => {
+const Form = ({ job = defaultValues }: { job?: Job }) => {
+  const router = useRouter();
   const [data, setData] = useState(job);
 
   const handleChange = (event: ChangeEvent) => {
@@ -20,7 +22,8 @@ const JobForm = ({ job = defaultValues }: { job: Job }) => {
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
-    await fetch("/api/jobs", {
+
+    const result = await fetch("/api/jobs", {
       method: data.id ? "PUT" : "POST",
       headers: {
         Accept: "application/json",
@@ -28,6 +31,14 @@ const JobForm = ({ job = defaultValues }: { job: Job }) => {
       },
       body: JSON.stringify(data),
     });
+
+    const { id } = await result.json();
+
+    if (id !== job.id) {
+      router.push(`/jobs/${id}`);
+    } else {
+      router.reload();
+    }
   };
 
   useEffect(() => {
@@ -116,4 +127,4 @@ const JobForm = ({ job = defaultValues }: { job: Job }) => {
   );
 };
 
-export default JobForm;
+export default Form;

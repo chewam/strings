@@ -19,11 +19,11 @@ const Job = async (req: NextApiRequest, res: NextApiResponse) => {
       res.json(jobs);
     }
   } else if (req.method === "POST") {
-    const job = createJob(req.body);
+    const job = await createJob(req.body);
     res.json(job);
   } else if (req.method === "PUT") {
     const { id, ...data } = req.body;
-    const job = updateJob(id, data);
+    const job = await updateJob(id, data);
     res.json(job);
   } else {
     res.status(405).end();

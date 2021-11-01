@@ -12,7 +12,7 @@ import Privacy from "../sections/privacy";
 function Page() {
   return (
     <>
-      <Header />
+      <Header noBackground={true} />
       <Home />
       <Candidates />
       <Employers />

@@ -6,6 +6,7 @@ interface Job {
   profile: string;
   location: string;
   worktime: string;
+  created_at?: Date;
   description: string;
   technologies?: string[];
 }
