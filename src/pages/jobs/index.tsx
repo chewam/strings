@@ -1,17 +1,16 @@
-import useSWR, { SWRConfig } from "swr";
 import { GetStaticProps } from "next";
+import useSWR, { SWRConfig } from "swr";
 
 import Page from "../../components/page";
 import fetcher from "../../utils/fetcher";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
+import { getJobs } from "../../services/jobs";
 import JobsList from "../../components/jobs-list";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await fetch("https://strings-kappa.vercel.app/api/jobs");
-  console.log("DATA", data);
-
-  const jobs = await data.json();
+  const jobs = await getJobs();
+  console.log("JOBS", jobs);
 
   return {
     props: {
