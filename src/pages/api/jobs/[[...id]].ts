@@ -1,4 +1,6 @@
+import { withSentry } from "@sentry/nextjs";
 import type { NextApiRequest, NextApiResponse } from "next";
+
 import db from "../../../utils/db";
 
 const getJobs = () => {
@@ -57,4 +59,4 @@ const Job = async (req: NextApiRequest, res: NextApiResponse) => {
   }
 };
 
-export default Job;
+export default withSentry(Job);
