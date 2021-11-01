@@ -5,6 +5,7 @@
 | variable                 | usage | visibility | description                                                          |
 |--------------------------|-------|------------|----------------------------------------------------------------------|
 | NEXT_PUBLIC_MAPBOX_TOKEN | build | public     | Mapbox service token to display office location on the landing page. |
+| SENTRY_AUTH_TOKEN        | build | public     | Sentry service token to track and repport errors.                    |
 | MAILJET_APIKEY_PUBLIC    | run   | private    | Mailjet service public key to send candidate contact email.          |
 | MAILJET_APIKEY_PRIVATE   | run   | private    | Mailjet service private key to send candidate contact email.         |
 | POSTGRES_PORT            | run   | private    | Postgres database port.                                              |
