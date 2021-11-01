@@ -63,32 +63,27 @@ const JobLogo = () => (
   </div>
 );
 
-const JobActions = ({
-  jobId,
-  isAdmin,
-  handleEditChange,
-}: {
-  isAdmin: boolean;
-  jobId: string | undefined;
-  handleEditChange: () => void;
-}) => (
-  <div className="flex flex-col">
-    <Link href={`#apply-now`}>
-      <a className="btn">Apply now</a>
-    </Link>
-    {isAdmin && (
-      <>
-        <button className="mt-5 admin" onClick={handleEditChange}>
-          Edit job
-        </button>
-        <button className="mt-5 admin">Duplicate</button>
-      </>
-    )}
-  </div>
-);
+const JobActions = ({ handleEditChange }: { handleEditChange: () => void }) => {
+  const [session] = useSession();
+
+  return (
+    <div className="flex flex-col">
+      <Link href={`#apply-now`}>
+        <a className="btn">Apply now</a>
+      </Link>
+      {session && (
+        <>
+          <button className="mt-5 admin" onClick={handleEditChange}>
+            Edit job
+          </button>
+          <button className="mt-5 admin">Duplicate</button>
+        </>
+      )}
+    </div>
+  );
+};
 
 const JobView = ({ job }: { job: Job }) => {
-  const [session] = useSession();
   const [edit, setEdit] = useState(false);
 
   return (
@@ -97,11 +92,7 @@ const JobView = ({ job }: { job: Job }) => {
       <div className="center">
         {edit ? <JobForm job={job} /> : <JobTemplate job={job} />}
       </div>
-      <JobActions
-        jobId={job.id}
-        isAdmin={!!session}
-        handleEditChange={() => setEdit(!edit)}
-      />
+      <JobActions handleEditChange={() => setEdit(!edit)} />
     </div>
   );
 };
