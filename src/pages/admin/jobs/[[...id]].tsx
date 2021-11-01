@@ -17,7 +17,6 @@ const Job = () => {
 
   if (error) return <div>failed to load job data</div>;
 
-  console.log("ID", id, job);
   return (
     <>
       <Header />

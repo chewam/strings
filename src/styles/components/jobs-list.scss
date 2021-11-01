@@ -1,13 +1,13 @@
 .job {
+  // .btn {
+  //   display: none;
+  // }
 
-  .btn {
-    display: none;
-  }
+  // &:hover {
+  //   @apply bg-white shadow-lg;
 
-  &:hover {
-    @apply bg-white shadow-lg;
-    .btn {
-      display: block;
-    }
-  }
+  //   .btn {
+  //     display: block;
+  //   }
+  // }
 }

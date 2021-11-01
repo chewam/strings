@@ -8,4 +8,13 @@ export default NextAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
+  secret: "5678909876GHJKLKJHGFGHJK678976556787642",
+  session: {
+    jwt: true,
+  },
+  jwt: {},
+  pages: {},
+  callbacks: {},
+  events: {},
+  debug: false,
 });

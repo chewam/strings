@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { useSession } from "next-auth/client";
 import { Clock, MapPin, DollarSign } from "react-feather";
 
 import JobForm from "./job-form";
@@ -64,23 +65,30 @@ const JobLogo = () => (
 
 const JobActions = ({
   jobId,
+  isAdmin,
   handleEditChange,
 }: {
+  isAdmin: boolean;
   jobId: string | undefined;
   handleEditChange: () => void;
 }) => (
   <div className="flex flex-col">
-    <Link href={`/jobs/${jobId}`}>
+    <Link href={`#apply-now`}>
       <a className="btn">Apply now</a>
     </Link>
-    <button className="mt-5 admin" onClick={handleEditChange}>
-      Edit job
-    </button>
-    <button className="mt-5 admin">Duplicate</button>
+    {isAdmin && (
+      <>
+        <button className="mt-5 admin" onClick={handleEditChange}>
+          Edit job
+        </button>
+        <button className="mt-5 admin">Duplicate</button>
+      </>
+    )}
   </div>
 );
 
 const JobView = ({ job }: { job: Job }) => {
+  const [session] = useSession();
   const [edit, setEdit] = useState(false);
 
   return (
@@ -89,7 +97,11 @@ const JobView = ({ job }: { job: Job }) => {
       <div className="center">
         {edit ? <JobForm job={job} /> : <JobTemplate job={job} />}
       </div>
-      <JobActions jobId={job.id} handleEditChange={() => setEdit(!edit)} />
+      <JobActions
+        jobId={job.id}
+        isAdmin={!!session}
+        handleEditChange={() => setEdit(!edit)}
+      />
     </div>
   );
 };

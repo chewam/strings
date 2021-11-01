@@ -53,7 +53,10 @@ const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
         </Page>
       </section>
       <section className="bg-indigo-900 text-white py-10">
-        <div className="container mx-auto flex flex-col items-center px-40">
+        <div
+          id="apply-now"
+          className="container mx-auto flex flex-col items-center px-40"
+        >
           <h2 className="text-red-500 mb-5">
             Interested? Apply now for this position.
           </h2>

@@ -38,7 +38,6 @@ const updateJob = async (id: string, data: Job) => {
 const Job = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === "GET") {
     const { id } = req.query;
-    console.log("GET ID", id);
 
     if (id) {
       const job = await getJobById(id[0]);
