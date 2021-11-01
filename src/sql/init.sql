@@ -1,5 +1,5 @@
 CREATE TABLE public.jobs (
-    id uuid DEFAULT public.gen_random_uuid() NOT NULL,
+    id uuid DEFAULT gen_random_uuid() NOT NULL,
     title text NOT NULL,
     salary text NOT NULL,
     location text NOT NULL,

@@ -5,8 +5,9 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Page from "../../components/page";
 import fetcher from "../../utils/fetcher";
 import Header from "../../components/header";
-import JobView from "../../components/job-view";
 import Footer from "../../components/footer";
+import JobView from "../../components/job-view";
+import { getJobById } from "../../services/jobs";
 import ContactForm from "../../components/contact-form";
 
 export const getStaticPaths: GetStaticPaths = async () => {
@@ -18,8 +19,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params as { id: string };
-  const data = await fetch(`http://localhost:3000/api/jobs/${id}`);
-  const job = await data.json();
+  const job = await getJobById(id);
 
   return {
     props: {
@@ -53,7 +53,10 @@ const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
         </Page>
       </section>
       <section className="bg-indigo-900 text-white py-10">
-        <div className="container mx-auto flex flex-col items-center px-40">
+        <div
+          id="apply-now"
+          className="container mx-auto flex flex-col items-center px-40"
+        >
           <h2 className="text-red-500 mb-5">
             Interested? Apply now for this position.
           </h2>

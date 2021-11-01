@@ -1,11 +1,11 @@
 .job {
-
   .btn {
     display: none;
   }
 
   &:hover {
     @apply bg-white shadow-lg;
+
     .btn {
       display: block;
     }

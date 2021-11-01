@@ -11,19 +11,16 @@ const defaultValues = {
 };
 
 const JobForm = ({ job = defaultValues }: { job: Job }) => {
-  console.log("JOB FORM", job);
-
   const [data, setData] = useState(job);
 
   const handleChange = (event: ChangeEvent) => {
     const { name, value } = event.target as HTMLInputElement;
-    console.log("event", event, name, value);
     setData({ ...data, [name]: value });
   };
 
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
-    const result = await fetch("/api/jobs", {
+    await fetch("/api/jobs", {
       method: data.id ? "PUT" : "POST",
       headers: {
         Accept: "application/json",
@@ -31,7 +28,6 @@ const JobForm = ({ job = defaultValues }: { job: Job }) => {
       },
       body: JSON.stringify(data),
     });
-    console.log("result", result);
   };
 
   useEffect(() => {

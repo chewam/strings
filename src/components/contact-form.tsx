@@ -11,22 +11,18 @@ const ContactForm = () => {
   const [privacyPolicy, setPrivacyPolicy] = useState(false);
 
   const onNameChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log("NAME", event.target.value);
     setName(event.target.value);
   };
 
   const onEmailChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log("EMAIL", event.target.value);
     setEmail(event.target.value);
   };
 
   const onCVUpload = (file: File | undefined) => {
-    console.log("CV", file);
     setCV(file);
   };
 
   const onPortfolioUpload = (file: File | undefined) => {
-    console.log("PORTFOLIO", file);
     setPortfolio(file);
   };
 
@@ -41,7 +37,6 @@ const ContactForm = () => {
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
     const body = new FormData();
-    console.log("onSubmit", body);
 
     body.append("name", name);
     body.append("email", email);
@@ -50,7 +45,6 @@ const ContactForm = () => {
     if (portfolio) body.append("portfolio", portfolio, portfolio.name);
 
     const result = await fetch("/api/submit-cv", { method: "POST", body });
-    console.log("result", result);
   };
 
   return (
