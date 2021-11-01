@@ -1,11 +1,13 @@
 @use "colors";
 @use "components/header";
+@use "components/footer";
 @use "components/form";
 @use "components/jobs-list";
 @use "components/job-form";
 @use "components/job-view";
 @use "pages/index";
 @use "pages/privacy-policy";
+@use "pages/jobs";
 
 button,
 .btn {

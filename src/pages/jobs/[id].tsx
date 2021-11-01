@@ -7,6 +7,7 @@ import fetcher from "../../utils/fetcher";
 import Header from "../../components/header";
 import JobView from "../../components/job-view";
 import Footer from "../../components/footer";
+import ContactForm from "../../components/contact-form";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
@@ -44,12 +45,26 @@ const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
   return (
     <>
       <Header />
-      <Page>
-        <SWRConfig value={{ fallback }}>
-          <JobViewLoader />
-        </SWRConfig>
-      </Page>
-      <Footer />
+      <div className="job">
+        <Page>
+          <SWRConfig value={{ fallback }}>
+            <JobViewLoader />
+          </SWRConfig>
+        </Page>
+      </div>
+      <div className="bg-indigo-900 text-white py-10">
+        <div className="container mx-auto flex flex-col items-center px-40">
+          <h2 className="text-red-500 mb-5">
+            Interested? Apply now for this position.
+          </h2>
+          <p className="text-center mb-10">
+            Submit your CV by clicking on the button below and we will make sure
+            to follow up with more relevant options.
+          </p>
+          <ContactForm />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };

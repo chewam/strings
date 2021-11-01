@@ -1,4 +1,8 @@
 header {
+  @apply bg-no-repeat bg-cover bg-center pb-20;
+
+  background-image: url("/images/background.svg");
+
   .logo {
     background-size: contain;
     background-image: url("/images/logo.svg");
