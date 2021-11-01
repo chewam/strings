@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import { getJobs } from "@/services/jobs";
 import JobsList from "@/components/jobs-list";
 import Container from "@/components/container";
+import { useSession } from "next-auth/client";
 
 export const getStaticProps: GetStaticProps = async () => {
   const jobs = await getJobs();
@@ -33,15 +34,19 @@ const JobListLoader = () => {
 };
 
 const Jobs = ({ fallback = {} }: { fallback: Record<string, Job[]> }) => {
+  const [session] = useSession();
+
   return (
     <>
       <Header />
       <Container>
-        <div className="flex flex-row-reverse mb-5">
-          <Link href="/jobs/new">
-            <a className="btn admin">Add job</a>
-          </Link>
-        </div>
+        {session && (
+          <div className="flex flex-row-reverse mb-5">
+            <Link href="/jobs/new">
+              <a className="btn admin">Add job</a>
+            </Link>
+          </div>
+        )}
         <SWRConfig value={{ fallback }}>
           <JobListLoader />
         </SWRConfig>
