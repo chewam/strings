@@ -1,7 +1,9 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
-import sendMail from "../../utils/send-mail";
 import type { File } from "formidable";
+import { withSentry } from "@sentry/nextjs";
+import type { NextApiRequest, NextApiResponse } from "next";
+
+import sendMail from "../../utils/send-mail";
 
 export const config = {
   api: { bodyParser: false },
@@ -17,7 +19,7 @@ type FormFields = {
   email: string;
 };
 
-const getValue = (param: any) => (Array.isArray(param) ? param[0] : param);
+// const getValue = (param: any) => (Array.isArray(param) ? param[0] : param);
 
 const SubmitCV = (req: NextApiRequest, res: NextApiResponse) => {
   const form = formidable({ multiples: true });
@@ -31,4 +33,4 @@ const SubmitCV = (req: NextApiRequest, res: NextApiResponse) => {
   });
 };
 
-export default SubmitCV;
+export default withSentry(SubmitCV);
