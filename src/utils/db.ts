@@ -1,6 +1,7 @@
 import { Pool } from "pg";
 
 const {
+  PRODUCTION,
   POSTGRES_PORT,
   POSTGRES_USERNAME,
   POSTGRES_PASSWORD,
@@ -10,6 +11,7 @@ const {
 
 const pool = new Pool({
   max: 4,
+  ssl: !!PRODUCTION,
   idleTimeoutMillis: 30000,
   connectionString: `postgres://${POSTGRES_USERNAME}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DATABASE}`,
 });
