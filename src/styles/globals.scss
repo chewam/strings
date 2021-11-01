@@ -20,7 +20,9 @@ button,
     font-semibold
     border-red-500
     shadow-btn-red
-    hover:bg-red-700
+    hover:bg-red-600
+    hover:no-underline
+    hover:border-red-600
     focus:ring-2
     focus:outline-none
     focus:ring-red-400
@@ -34,6 +36,21 @@ button,
       text-red-500
       border-red-500
       hover:bg-red-700
+      focus:ring-2
+      focus:outline-none
+      focus:ring-red-400
+      focus:ring-opacity-75;
+  }
+
+  &.admin {
+    @apply
+      bg-white
+      border-2
+      shadow-none
+      text-indigo-500
+      border-indigo-500
+      hover:bg-indigo-500
+      hover:text-white
       focus:ring-2
       focus:outline-none
       focus:ring-red-400

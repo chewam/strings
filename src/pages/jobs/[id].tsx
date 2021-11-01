@@ -45,14 +45,14 @@ const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
   return (
     <>
       <Header />
-      <div className="job">
+      <section className="job">
         <Page>
           <SWRConfig value={{ fallback }}>
             <JobViewLoader />
           </SWRConfig>
         </Page>
-      </div>
-      <div className="bg-indigo-900 text-white py-10">
+      </section>
+      <section className="bg-indigo-900 text-white py-10">
         <div className="container mx-auto flex flex-col items-center px-40">
           <h2 className="text-red-500 mb-5">
             Interested? Apply now for this position.
@@ -63,8 +63,8 @@ const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
           </p>
           <ContactForm />
         </div>
-        <Footer />
-      </div>
+      </section>
+      <Footer />
     </>
   );
 };
