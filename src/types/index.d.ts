@@ -1,5 +1,5 @@
 interface Job {
-  id: string;
+  id?: string;
   title: string;
   salary: number;
   office: string;
@@ -7,5 +7,5 @@ interface Job {
   location: string;
   worktime: string;
   description: string;
-  technologies: string[];
+  technologies?: string[];
 }

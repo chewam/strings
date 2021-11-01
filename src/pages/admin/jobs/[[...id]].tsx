@@ -4,18 +4,27 @@ import Page from "../../../components/page";
 import fetcher from "../../../utils/fetcher";
 import Header from "../../../components/header";
 import JobForm from "../../../components/job-form";
+import Footer from "../../../components/footer";
 
 const Job = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const { data: job, error } = useSWR(() => `/api/jobs/${id}`, fetcher);
-  console.log("router", router, id, job);
+  const { data: job, error } = useSWR(
+    id ? `/api/jobs/${id[0]}` : null,
+    fetcher
+  );
 
+  if (error) return <div>failed to load job data</div>;
+
+  console.log("ID", id, job);
   return (
     <>
       <Header />
-      <Page>{job && <JobForm job={job} />}</Page>
+      <Page>
+        <JobForm job={job} />
+      </Page>
+      <Footer />
     </>
   );
 };

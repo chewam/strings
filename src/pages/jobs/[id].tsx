@@ -6,6 +6,7 @@ import Page from "../../components/page";
 import fetcher from "../../utils/fetcher";
 import Header from "../../components/header";
 import JobView from "../../components/job-view";
+import Footer from "../../components/footer";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
@@ -48,6 +49,7 @@ const Job = ({ fallback = {} }: { fallback: Record<string, Job> }) => {
           <JobViewLoader />
         </SWRConfig>
       </Page>
+      <Footer />
     </>
   );
 };

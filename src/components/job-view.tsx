@@ -28,7 +28,7 @@ const JobView = ({ job }: { job: Job }) => {
           </div>
         </div>
         <div className="flex text-sm mt-2">
-          {job.technologies.map((technology, i) => (
+          {job.technologies?.map((technology, i) => (
             <div key={i} className="bg-white shadow px-2 mr-2">
               {technology}
             </div>

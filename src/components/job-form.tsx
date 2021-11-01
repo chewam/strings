@@ -1,6 +1,18 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
-const JobForm = ({ job }: { job: Job }) => {
+const defaultValues = {
+  title: "",
+  salary: 0,
+  office: "",
+  profile: "",
+  location: "",
+  worktime: "",
+  description: "",
+};
+
+const JobForm = ({ job = defaultValues }: { job: Job }) => {
+  console.log("JOB FORM", job);
+
   const [data, setData] = useState(job);
 
   const handleChange = (event: ChangeEvent) => {
@@ -9,11 +21,29 @@ const JobForm = ({ job }: { job: Job }) => {
     setData({ ...data, [name]: value });
   };
 
+  const handleSubmit = async (event: FormEvent) => {
+    event.preventDefault();
+    const result = await fetch("/api/jobs", {
+      method: data.id ? "PUT" : "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+    console.log("result", result);
+  };
+
+  useEffect(() => {
+    setData(job);
+  }, [job]);
+
   return (
-    <form className="job-form">
+    <form className="job-form" onSubmit={handleSubmit}>
       <label>
         Title:
         <input
+          required
           id="title"
           name="title"
           value={data.title}
@@ -23,6 +53,7 @@ const JobForm = ({ job }: { job: Job }) => {
       <label>
         Location:
         <input
+          required
           id="location"
           name="location"
           value={data.location}
@@ -32,6 +63,7 @@ const JobForm = ({ job }: { job: Job }) => {
       <label>
         Salary:
         <input
+          required
           id="salary"
           name="salary"
           value={data.salary}
@@ -39,8 +71,9 @@ const JobForm = ({ job }: { job: Job }) => {
         />
       </label>
       <label>
-        Work Tine:
+        Work Time:
         <input
+          required
           id="worktime"
           name="worktime"
           value={data.worktime}
@@ -53,6 +86,7 @@ const JobForm = ({ job }: { job: Job }) => {
       <label>
         Description:
         <textarea
+          required
           rows={10}
           id="description"
           name="description"
@@ -63,6 +97,7 @@ const JobForm = ({ job }: { job: Job }) => {
       <label>
         Profile:
         <textarea
+          required
           rows={10}
           id="profile"
           name="profile"

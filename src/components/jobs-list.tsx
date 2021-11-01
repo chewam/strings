@@ -6,14 +6,14 @@ import fetcher from "../utils/fetcher";
 import { Clock, MapPin, DollarSign } from "react-feather";
 
 import phpLogo from "../../public/images/php.svg";
-import timeIcon from "../../public/images/time-icon.svg";
-import salaryIcon from "../../public/images/salary-icon.svg";
-import locationIcon from "../../public/images/location-icon.svg";
 
 const JobsList = ({ admin = false }: { admin?: boolean }) => {
   const { data: jobs, error } = useSWR("/api/jobs", fetcher);
+
   if (error) return <div>failed to load</div>;
   if (!jobs) return <div>loading...</div>;
+  if (!jobs.length) return <div>there is no recorded job yet</div>;
+
   return (
     <div>
       {jobs.map((job: Job, i: number) => (
@@ -38,7 +38,7 @@ const JobsList = ({ admin = false }: { admin?: boolean }) => {
               </div>
             </div>
             <div className="flex text-sm mt-2">
-              {job.technologies.map((technology, i) => (
+              {job.technologies?.map((technology, i) => (
                 <div key={i} className="bg-white shadow px-2 mr-2">
                   {technology}
                 </div>

@@ -38,7 +38,7 @@ const ContactForm = () => {
     setUpdates(event.target.checked);
   };
 
-  const onSubmit = async (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
     const body = new FormData();
     console.log("onSubmit", body);
@@ -54,7 +54,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={handleSubmit}>
       <div className="fields">
         <input
           required
