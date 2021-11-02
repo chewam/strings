@@ -39,9 +39,7 @@ function Contact() {
           <div className="text-sm">Strings 2021 © All rights reserved</div>
         </div>
       </div>
-      <div className="flex-1 bg-cyan-100">
-        <Map />
-      </div>
+      <Map />
     </section>
   );
 }

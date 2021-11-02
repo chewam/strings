@@ -1,7 +1,7 @@
 import Image from "next/image";
 import GoogleMapReact from "google-map-react";
-import { useEffect, useRef, useState } from "react";
 
+import styles from "@/styles/map";
 import marker from "@/public/images/map_marker.svg";
 
 const Marker = ({
@@ -20,12 +20,18 @@ const Marker = ({
 
 const Map = () => {
   const center = { lat: 42.6953834, lng: 23.32 };
+  const options = { styles, disableDefaultUI: true };
   const marker = { lat: 42.6994879, lng: 23.3259157 };
   const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || "";
 
   return (
-    <div style={{ height: "100vh", width: "100%" }}>
-      <GoogleMapReact zoom={14} center={center} bootstrapURLKeys={{ key }}>
+    <div className="flex-1">
+      <GoogleMapReact
+        zoom={14}
+        center={center}
+        options={options}
+        bootstrapURLKeys={{ key }}
+      >
         <Marker lat={marker.lat} lng={marker.lng} text="My Marker" />
       </GoogleMapReact>
     </div>
