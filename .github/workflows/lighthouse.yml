@@ -24,9 +24,6 @@ jobs:
     - name: Install dependencies
       run: yarn --frozen-lockfile --prefer-offline
 
-    - name: Install lighthouse
-      run: npm install -g @lhci/cli@0.6.x
-
     - name: Build application
       run: yarn build
       env:
@@ -37,6 +34,9 @@ jobs:
         POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
         SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
         NEXT_PUBLIC_MAPBOX_TOKEN: ${{ secrets.NEXT_PUBLIC_MAPBOX_TOKEN }}
+
+    - name: Install lighthouse
+      run: yarn global add @lhci/cli@0.6.x
 
     - name: Run lighthouse
       run: lhci autorun
