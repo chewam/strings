@@ -29,6 +29,14 @@ jobs:
 
     - name: Build application
       run: yarn build
+      env:
+        POSTGRES_PORT: ${{ secrets.POSTGRES_PORT }}
+        POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
+        POSTGRES_USERNAME: ${{ secrets.POSTGRES_USERNAME }}
+        POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+        POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
+        SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+        NEXT_PUBLIC_MAPBOX_TOKEN: ${{ secrets.NEXT_PUBLIC_MAPBOX_TOKEN }}
 
     - name: Run lighthouse
       run: lhci autorun
