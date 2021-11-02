@@ -9,9 +9,6 @@ concurrency:
 
 jobs:
 
-  ##############################################################################
-  ## TEST APPLICATION
-  ##############################################################################
   test:
     name: Test application
     runs-on: ubuntu-latest
@@ -28,3 +25,9 @@ jobs:
 
     - name: Run tests
       run: yarn test --coverage
+
+    - name: Publish code coverage
+      uses: codecov/codecov-action@v2
+      with:
+        flags: snapshots
+        fail_ci_if_error: true
