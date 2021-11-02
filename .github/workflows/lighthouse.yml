@@ -35,10 +35,7 @@ jobs:
         SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
         NEXT_PUBLIC_MAPBOX_TOKEN: ${{ secrets.NEXT_PUBLIC_MAPBOX_TOKEN }}
 
-    - name: Install lighthouse
-      run: yarn global add @lhci/cli@0.6.x
-
     - name: Run lighthouse
-      run: lhci autorun --collect.startServerCommand="yarn start"
+      run: yarn lhci
       env:
         LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

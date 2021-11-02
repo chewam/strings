@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "lhci": "lhci autorun"
   },
   "dependencies": {
     "@sentry/nextjs": "^6.13.3",
@@ -30,6 +31,7 @@
     "swr": "^1.0.1"
   },
   "devDependencies": {
+    "@lhci/cli": "0.6.x",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
     "@types/next-auth": "^3.15.0",
