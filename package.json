@@ -7,16 +7,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:dev": "NODE_ENV=development env-cmd -f .env.development next build",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
     "lhci": "lhci autorun"
   },
   "dependencies": {
-    "@sentry/nextjs": "^6.13.3",
-    "@types/formidable": "^1.2.4",
-    "@types/mapbox-gl": "^2.4.2",
-    "@types/node-mailjet": "^3.3.7",
     "formidable": "^1.2.2",
     "mapbox-gl": "^2.5.1",
     "next": "^11.1.2",
@@ -31,6 +28,10 @@
     "swr": "^1.0.1"
   },
   "devDependencies": {
+    "@sentry/nextjs": "^6.13.3",
+    "@types/formidable": "^1.2.4",
+    "@types/mapbox-gl": "^2.4.2",
+    "@types/node-mailjet": "^3.3.7",
     "@lhci/cli": "0.6.x",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
@@ -39,6 +40,7 @@
     "@types/react": "^17.0.31",
     "autoprefixer": "^10.3.7",
     "babel-jest": "^27.3.1",
+    "env-cmd": "^10.1.0",
     "eslint": "^7.0",
     "eslint-config-next": "11.1.2",
     "eslint-plugin-prettier": "^4.0.0",
