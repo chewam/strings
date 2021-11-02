@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import privacy from "../../public/images/privacy.svg";
+import privacy from "@/public/images/privacy.svg";
 
 function Privacy() {
   return (

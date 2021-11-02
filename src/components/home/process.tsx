@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import process from "../../public/images/process.svg";
-import processArrow1 from "../../public/images/process_arrow_1.svg";
-import processArrow2 from "../../public/images/process_arrow_2.svg";
-import processArrow3 from "../../public/images/process_arrow_3.svg";
+import process from "@/public/images/process.svg";
+import processArrow1 from "@/public/images/process_arrow_1.svg";
+import processArrow2 from "@/public/images/process_arrow_2.svg";
+import processArrow3 from "@/public/images/process_arrow_3.svg";
 
 function Process() {
   return (

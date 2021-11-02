@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import team1 from "../../public/images/team_1.png";
-import team2 from "../../public/images/team_2.png";
+import team1 from "@/public/images/team_1.png";
+import team2 from "@/public/images/team_2.png";
 
 function Team() {
   return (

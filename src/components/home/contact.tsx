@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Map from "../components/map";
+import Map from "@/components/map";
 
-import twitter from "../../public/images/contact_twitter.svg";
-import facebook from "../../public/images/contact_facebook.svg";
-import linkedin from "../../public/images/contact_linkedin.svg";
+import twitter from "@/public/images/contact_twitter.svg";
+import facebook from "@/public/images/contact_facebook.svg";
+import linkedin from "@/public/images/contact_linkedin.svg";
 
 function Contact() {
   return (

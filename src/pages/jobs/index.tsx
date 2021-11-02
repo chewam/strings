@@ -12,7 +12,6 @@ import { useSession } from "next-auth/client";
 
 export const getStaticProps: GetStaticProps = async () => {
   const jobs = await getJobs();
-  console.log("JOBS", jobs);
 
   return {
     props: {

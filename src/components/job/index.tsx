@@ -25,7 +25,6 @@ const Job = ({ job, editing = false }: { job: Job; editing?: boolean }) => {
     });
 
     const { id } = await result.json();
-    console.log("result duplicate", result, id);
     router.push(`/jobs/${id}`);
   };
 

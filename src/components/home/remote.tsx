@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ContactForm from "../components/contact-form";
+import ContactForm from "@/components/contact-form";
 
-import remote from "../../public/images/remote.svg";
+import remote from "@/public/images/remote.svg";
 
 function Remote() {
   return (

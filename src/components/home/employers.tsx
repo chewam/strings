@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import companyPicto1 from "../../public/images/companies_picto_1.svg";
-import companyPicto2 from "../../public/images/companies_picto_2.svg";
-import companyPicto3 from "../../public/images/companies_picto_3.svg";
+import companyPicto1 from "@/public/images/companies_picto_1.svg";
+import companyPicto2 from "@/public/images/companies_picto_2.svg";
+import companyPicto3 from "@/public/images/companies_picto_3.svg";
 
 function Employers() {
   return (

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import expertise1 from "../../public/images/expertise_1.svg";
-import expertise2 from "../../public/images/expertise_2.svg";
-import expertise3 from "../../public/images/expertise_3.svg";
+import expertise1 from "@/public/images/expertise_1.svg";
+import expertise2 from "@/public/images/expertise_2.svg";
+import expertise3 from "@/public/images/expertise_3.svg";
 
 function ITExpertise() {
   return (

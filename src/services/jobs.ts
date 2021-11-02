@@ -30,7 +30,6 @@ export const createJob = async (data: Job) => {
   const sql = `INSERT INTO jobs(${columns}) VALUES(${bindings}) RETURNING *`;
 
   const rows = await db.query(sql, values);
-  console.log("CREATE JOB rows", rows);
 
   return rows[0];
 };
