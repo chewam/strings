@@ -39,6 +39,6 @@ jobs:
       run: yarn global add @lhci/cli@0.6.x
 
     - name: Run lighthouse
-      run: lhci autorun
+      run: lhci autorun --collect.startServerCommand="yarn start"
       env:
         LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

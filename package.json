@@ -9,8 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest",
-    "serve:lhci": "NODE_ENV=production yarn start"
+    "test": "jest"
   },
   "dependencies": {
     "@sentry/nextjs": "^6.13.3",
