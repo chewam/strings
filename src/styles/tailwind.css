@@ -28,22 +28,25 @@
   }
 
   @font-face {
-    font-style: normal;
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
     font-family: "Galano Grotesque Regular";
     src: local("Galano Grotesque Regular"), url("/fonts/GalanoGrotesqueRegular.woff") format("woff");
   }
 
   @font-face {
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
-    font-family: "Galano Grotesque Heavy";
-    src: local("Galano Grotesque Heavy"), url("/fonts/GalanoGrotesqueHeavy.woff") format("woff");
+    font-display: swap;
+    font-family: "Galano Grotesque Meduim";
+    src: local("Galano Grotesque Meduim"), url("/fonts/GalanoGrotesqueMedium.woff") format("woff");
   }
 
   @font-face {
-    font-weight: normal;
+    font-weight: 600;
     font-style: normal;
+    font-display: swap;
     font-family: "Galano Grotesque SemiBold";
     src: local("Galano Grotesque SemiBold"), url("/fonts/GalanoGrotesqueSemiBold.woff") format("woff");
   }
@@ -51,6 +54,7 @@
   @font-face {
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
     font-family: "Galano Grotesque Bold";
     src: local("Galano Grotesque Bold"), url("/fonts/GalanoGrotesqueBold.woff") format("woff");
   }
