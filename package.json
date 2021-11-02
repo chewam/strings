@@ -14,7 +14,9 @@
     "lhci": "lhci autorun"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^12.0.2",
     "formidable": "^1.2.2",
+    "google-map-react": "^2.1.10",
     "mapbox-gl": "^2.5.1",
     "next": "^11.1.2",
     "next-auth": "^3.29.0",
@@ -28,14 +30,15 @@
     "swr": "^1.0.1"
   },
   "devDependencies": {
-    "@sentry/nextjs": "^6.13.3",
-    "@types/formidable": "^1.2.4",
-    "@types/mapbox-gl": "^2.4.2",
-    "@types/node-mailjet": "^3.3.7",
     "@lhci/cli": "0.6.x",
+    "@sentry/nextjs": "^6.13.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
+    "@types/formidable": "^1.2.4",
+    "@types/google-map-react": "^2.1.3",
+    "@types/mapbox-gl": "^2.4.2",
     "@types/next-auth": "^3.15.0",
+    "@types/node-mailjet": "^3.3.7",
     "@types/pg": "^8.6.1",
     "@types/react": "^17.0.31",
     "autoprefixer": "^10.3.7",

@@ -18,8 +18,9 @@ function Employers() {
             <div className="company">
               <div className="relative -left-5">
                 <Image
-                  width={70}
-                  height={70}
+                  // width={70}
+                  // height={70}
+                  // layout="responsive"
                   src={companyPicto1}
                   alt="companies section first illustration"
                 />
@@ -35,8 +36,8 @@ function Employers() {
             <div className="company">
               <div className="relative -left-10">
                 <Image
-                  width={140}
-                  height={140}
+                  // width={140}
+                  // height={140}
                   src={companyPicto2}
                   alt="companies section first illustration"
                 />
@@ -52,8 +53,8 @@ function Employers() {
             <div className="company">
               <div className="relative -left-6">
                 <Image
-                  width={200}
-                  height={200}
+                  // width={200}
+                  // height={200}
                   src={companyPicto3}
                   alt="companies section first illustration"
                 />

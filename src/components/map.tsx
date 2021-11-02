@@ -1,38 +1,35 @@
-import mapboxgl from "mapbox-gl";
+import Image from "next/image";
+import GoogleMapReact from "google-map-react";
 import { useEffect, useRef, useState } from "react";
 
-import "mapbox-gl/dist/mapbox-gl.css";
+import marker from "@/public/images/map_marker.svg";
 
-function MapboxMap() {
-  const [, setMap] = useState<mapboxgl.Map>();
-  const mapNode = useRef(null);
+const Marker = ({
+  lat,
+  lng,
+  text,
+}: {
+  lat: number;
+  lng: number;
+  text: string;
+}) => (
+  <div className="absolute w-12 h-18 transform -translate-y-full -translate-x-1/2 ">
+    <Image src={marker} alt="map marker" />
+  </div>
+);
 
-  useEffect(() => {
-    const node = mapNode.current;
-    if (typeof window === "undefined" || node === null) return;
+const Map = () => {
+  const center = { lat: 42.6953834, lng: 23.32 };
+  const marker = { lat: 42.6994879, lng: 23.3259157 };
+  const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || "";
 
-    const map = new mapboxgl.Map({
-      zoom: 13,
-      container: node,
-      center: [23.32, 42.6953834],
-      style: "mapbox://styles/mapbox/light-v10",
-      accessToken: process.env.NEXT_PUBLIC_MAPBOX_TOKEN,
-    });
+  return (
+    <div style={{ height: "100vh", width: "100%" }}>
+      <GoogleMapReact zoom={14} center={center} bootstrapURLKeys={{ key }}>
+        <Marker lat={marker.lat} lng={marker.lng} text="My Marker" />
+      </GoogleMapReact>
+    </div>
+  );
+};
 
-    const el = document.createElement("div");
-    el.className = "marker";
-    new mapboxgl.Marker(el).setLngLat([23.3259157, 42.6994879]).addTo(map);
-
-    map.scrollZoom.disable();
-
-    setMap(map);
-
-    return () => {
-      map.remove();
-    };
-  }, []);
-
-  return <div ref={mapNode} style={{ width: "100%", height: "100%" }} />;
-}
-
-export default MapboxMap;
+export default Map;
