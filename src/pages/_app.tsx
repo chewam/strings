@@ -22,15 +22,18 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="author" content="Strings IT Recruitment" />
         <meta name="application-name" content="Strings IT Recruitment" />
         <meta
+          name="title"
           property="og:title"
           content="Based in Sofia, Bulgaria, we are an IT recruitment agency dedicated to the selection of techies with IT skills looking for more exciting career opportunities."
         />
         <meta property="og:type" content="article" />
         <meta
+          name="image"
           property="og:image"
           content="http://pullthestrings.me/images/rgb/Strings.jpg"
         />
         <meta
+          name="description"
           property="og:description"
           content="Strings IT Recruitment is a Sofia, Bulgaria-based IT recruitment agency which challenges IT professionals to discover more exciting career opportunities. Free of charge, of course."
         />
