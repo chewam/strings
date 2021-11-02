@@ -1,0 +1,2585 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+Array [
+  <header
+    className="no-background"
+  >
+    <div
+      className="container mx-auto flex items-center"
+    >
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "margin": 0,
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "block",
+              "maxWidth": "100%",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            style={
+              Object {
+                "border": "none",
+                "display": "block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "padding": 0,
+              }
+            }
+          />
+        </div>
+        <img
+          alt="company logo"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="company logo"
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="/_next/image?url=%2Ftest-file-stub&w=256&q=75"
+            srcSet="/_next/image?url=%2Ftest-file-stub&w=128&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=256&q=75 2x"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </div>
+      <nav
+        className="flex-1 flex justify-evenly"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Home
+        </a>
+        <a
+          href="/#candidates"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Candidates
+        </a>
+        <a
+          href="/#employers"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Employers
+        </a>
+        <a
+          href="/#process"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Process
+        </a>
+        <a
+          href="/#it-expertise"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          IT Expertise
+        </a>
+        <a
+          href="/#team"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Team
+        </a>
+        <a
+          href="/#remote"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Remote
+        </a>
+        <a
+          href="/#contact"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Contact
+        </a>
+      </nav>
+      <a
+        className="btn secondary mr-4"
+        href="/submit-cv"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        Submit CV
+      </a>
+      <a
+        className="btn"
+        href="/jobs"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        IT Jobs
+      </a>
+    </div>
+  </header>,
+  <section
+    className="bg-contain bg-no-repeat bg-bottom"
+    id="home"
+    style={
+      Object {
+        "backgroundImage": "url(/images/background.svg)",
+      }
+    }
+  >
+    <div
+      className="container mx-auto"
+    >
+      <h2
+        className="text-center mt-24 mb-6"
+      >
+        Get the IT job you deserve
+        <br />
+         with a little help from fellow IT specialits.
+      </h2>
+      <p
+        className="text-center mb-6"
+      >
+        Strings IT Recruitment is helping IT/tech professionals discover more exciting career opportunities.
+        <br />
+        Free of charge, of course.
+      </p>
+      <form
+        action=""
+        className="text-center pb-72"
+      >
+        <input
+          className="w-96 placeholder-gray-500"
+          placeholder="Search for job offers..."
+        />
+        <button
+          className="ml-4 big"
+        >
+          Search jobs
+        </button>
+      </form>
+    </div>
+  </section>,
+  <section
+    id="candidates"
+  >
+    <div
+      className="container mx-auto bg-white shadow-xl p-20 flex flex-col items-center"
+    >
+      <h2
+        className="mb-12"
+      >
+        Candidates
+      </h2>
+      <p
+        className="mb-20"
+      >
+        These are the profiles we look for most often:
+      </p>
+      <div
+        className="grid grid-rows-2 grid-flow-col gap-4 mb-20"
+      >
+        <div>
+          <div>
+            {
+          </div>
+          Business Intellignece Analyst
+        </div>
+        <div>
+          <div>
+            {
+          </div>
+          Database Developer
+        </div>
+        <div>
+          <div>
+            {
+          </div>
+          Data Scientist
+        </div>
+        <div>
+          <div>
+            {
+          </div>
+          QA Engineer
+        </div>
+        <div
+          className="row-span-2 border-4 border-red-500"
+        >
+          <div
+            className="text-2xl text-red-500"
+          >
+            {
+          </div>
+          Software Developer
+          <ul
+            className="text-black font-sans text-base mt-4"
+          >
+            <li>
+              JavaScript/TypeScript
+            </li>
+            <li>
+              PHP
+            </li>
+            <li>
+              Java
+            </li>
+            <li>
+              C#/.NET
+            </li>
+            <li>
+              Android
+            </li>
+            <li>
+              iOS
+            </li>
+            <li>
+              C++
+            </li>
+            <li>
+              Python
+            </li>
+            <li>
+              Scala
+            </li>
+            <li>
+              Go
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            {
+          </div>
+          UI/UX Designer
+        </div>
+        <div
+          className="col-span-2"
+        >
+          <div>
+            {
+          </div>
+          Digital Marketing Specialist
+        </div>
+        <div>
+          <div>
+            {
+          </div>
+          Project Manager
+        </div>
+      </div>
+      <button
+        className="big"
+      >
+        Apply now
+      </button>
+    </div>
+  </section>,
+  <section
+    className="bg-indigo-900"
+    id="employers"
+  >
+    <div
+      className="container mx-auto pt-20 flex flex-col items-center"
+    >
+      <h2
+        className="mb-12"
+      >
+        Companies
+      </h2>
+      <p
+        className="mb-20 text-center"
+      >
+        Based on their size, our clients can be divided into three groups:
+      </p>
+      <div
+        className="w-11/12 p-20 bg-indigo-800 "
+      >
+        <div
+          className="chart"
+        >
+          <div
+            className="bar yellow h-56"
+          >
+            10%
+          </div>
+          <div
+            className="company"
+          >
+            <div
+              className="relative -left-5"
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="companies section first illustration"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="companies section first illustration"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Ftest-file-stub&w=256&q=75"
+                    srcSet="/_next/image?url=%2Ftest-file-stub&w=96&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </div>
+            <div
+              className="type"
+            >
+              Big
+              <br />
+              Companies
+            </div>
+            <div
+              className=""
+            >
+              101+ people
+            </div>
+          </div>
+          <div
+            className="bar green h-72"
+          >
+            40%
+          </div>
+          <div
+            className="company"
+          >
+            <div
+              className="relative -left-10"
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="companies section first illustration"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="companies section first illustration"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                    srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </div>
+            <div
+              className="type"
+            >
+              Mid-sized
+              <br />
+              Companies
+            </div>
+            <div
+              className=""
+            >
+              41-100 people
+            </div>
+          </div>
+          <div
+            className="bar red h-96"
+          >
+            60%
+          </div>
+          <div
+            className="company"
+          >
+            <div
+              className="relative -left-6"
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "maxWidth": "100%",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                    style={
+                      Object {
+                        "border": "none",
+                        "display": "block",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "padding": 0,
+                      }
+                    }
+                  />
+                </div>
+                <img
+                  alt="companies section first illustration"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="companies section first illustration"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Ftest-file-stub&w=640&q=75"
+                    srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=640&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </div>
+            </div>
+            <div
+              className="type"
+            >
+              Small Businesses
+              <br />
+              and Startups
+            </div>
+            <div
+              className=""
+            >
+              1-40 people
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    className="process"
+    id="process"
+  >
+    <div
+      className="container mx-auto pt-20 flex flex-col items-center"
+    >
+      <h2
+        className="mb-20"
+      >
+        Process
+      </h2>
+      <div
+        className="grid grid-cols-4 gap-2"
+      >
+        <div
+          className="tile row-span-2"
+        >
+          <div
+            className="arrow mb-6 relative left-20 top-2"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="process section first arrow picto"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="process section first arrow picto"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <div
+            className="number"
+          >
+            1
+          </div>
+          <h3
+            className="my-8"
+          >
+            Apply
+          </h3>
+          <p
+            className="text-center text-sm px-3"
+          >
+            Simply send us your CV or a link to your professional profile. Your data is protected and we won’t share it with anyone without your approval. You can apply for a specific position (see all published positions here –link IT jobs), or you can just submit your CV (button) and let us inform you about relevant jobs based on your profile.
+          </p>
+        </div>
+        <div
+          className="tile"
+        >
+          <div
+            className="arrow absolute z-10 ml-64 -mt-10"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="process section first arrow picto"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="process section first arrow picto"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=256&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=128&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=256&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <div
+            className="number"
+          >
+            2
+          </div>
+          <h3
+            className="my-8"
+          >
+            Meet our tech expert
+          </h3>
+          <p
+            className="text-center text-sm px-3"
+          >
+            Meet our relevant tech expert(s) and have an informal talk about: technology, your plans and ambitions, the technical and non-technical details about the job(s). It shouldn’t take more than 1 hour and it can happen during, before or after the standard working time – depending on your preference.
+          </p>
+        </div>
+        <div
+          className="tile relative"
+        >
+          <div
+            className="number"
+          >
+            3
+          </div>
+          <h3
+            className="my-8"
+          >
+            Meet the employer
+          </h3>
+          <p
+            className="text-center text-sm px-3"
+          >
+            If both sides – you and Strings – agree that it makes sense for you to meet with our client(s), we will put you in touch with them. Please, keep in mind that each company has its own specific ways of dealing with the relevant applicants.
+          </p>
+        </div>
+        <div
+          className="tile relative row-span-2"
+        >
+          <div
+            className="arrow relative -left-24 top-4 mb-6"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="process section first arrow picto"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="process section first arrow picto"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <div
+            className="number"
+          >
+            4
+          </div>
+          <h3
+            className="my-8"
+          >
+            Get hired
+          </h3>
+          <p
+            className="text-center text-sm px-3"
+          >
+            Well, this last step doesn’t really need any further explanations. Good luck!
+          </p>
+        </div>
+        <div
+          className="col-span-2 flex justify-center"
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "inline-block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "maxWidth": "100%",
+                }
+              }
+            >
+              <img
+                alt=""
+                aria-hidden={true}
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                style={
+                  Object {
+                    "border": "none",
+                    "display": "block",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "padding": 0,
+                  }
+                }
+              />
+            </div>
+            <img
+              alt="process section illustration"
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+            <noscript>
+              <img
+                alt="process section illustration"
+                data-nimg="intrinsic"
+                decoding="async"
+                loading="lazy"
+                src="/_next/image?url=%2Ftest-file-stub&w=828&q=75"
+                srcSet="/_next/image?url=%2Ftest-file-stub&w=640&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=828&q=75 2x"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+            </noscript>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    className="it-expertise"
+    id="it-expertise"
+  >
+    <div
+      className="container mx-auto flex flex-col items-center"
+    >
+      <h2
+        className="mb-20"
+      >
+        IT Expertise
+      </h2>
+      <p
+        className="mb-20 text-center"
+      >
+        The meetings with our candidates occur in the presence of at least one relevant IT expert who has at least
+        <br />
+        4 years of experience with the required technologies.
+        <br />
+        Our IT experts will:
+      </p>
+      <div
+        className="grid grid-cols-3 gap-8 mx-10"
+      >
+        <div
+          className="tile"
+        >
+          <div
+            className="bracket"
+          >
+            {
+          </div>
+          <div
+            className="picto"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="expertise section first illustration"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="expertise section first illustration"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <p
+            className="text"
+          >
+            Give you the complete picture of all technical aspects regarding the positions.
+          </p>
+        </div>
+        <div
+          className="tile"
+        >
+          <div
+            className="bracket"
+          >
+            {
+          </div>
+          <div
+            className="picto"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="expertise section second illustration"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="expertise section second illustration"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <p
+            className="text"
+          >
+            Understand your level of expertise and your technological preferences.
+          </p>
+        </div>
+        <div
+          className="tile"
+        >
+          <div
+            className="bracket"
+          >
+            {
+          </div>
+          <div
+            className="picto"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="expertise section third illustration"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="expertise section third illustration"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <p
+            className="text"
+          >
+            Offer you advice for future improvement (if necessary, of course).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    id="team"
+  >
+    <div
+      className="container mx-auto bg-white shadow-xl p-20 flex flex-col items-center mb-10"
+    >
+      <h2
+        className="mb-12"
+      >
+        The Team
+      </h2>
+      <div
+        className="grid grid-cols-2 gap-28 my-10"
+      >
+        <div
+          className="tile"
+        >
+          <div
+            className="picture"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="first team member picture"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="first team member picture"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <div
+            className="bracket"
+          >
+            {
+          </div>
+          <div
+            className="name"
+          >
+            Dobromir Tsolyos
+          </div>
+          <div>
+            CEO
+          </div>
+          <div
+            className="networks"
+          >
+            <div
+              className=""
+              style={
+                Object {
+                  "backgroundImage": "url(/images/linkedin.svg)",
+                }
+              }
+            />
+            <div
+              className=""
+              style={
+                Object {
+                  "backgroundImage": "url(/images/facebook.svg)",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          className="tile"
+        >
+          <div
+            className="picture"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="second team member picture"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="second team member picture"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=384&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=256&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=384&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <div
+            className="bracket"
+          >
+            {
+          </div>
+          <div
+            className="name"
+          >
+            Gary van Woerkens
+          </div>
+          <div>
+            Chief Technical Officer
+          </div>
+          <div
+            className="networks"
+          >
+            <div
+              className=""
+              style={
+                Object {
+                  "backgroundImage": "url(/images/linkedin.svg)",
+                }
+              }
+            />
+            <div
+              className=""
+              style={
+                Object {
+                  "backgroundImage": "url(/images/facebook.svg)",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    id="remote"
+  >
+    <div
+      className="container mx-auto p-10 flex"
+    >
+      <div
+        className="flex-1 pr-10"
+      >
+        <h2
+          className="mb-5"
+        >
+          Remote
+        </h2>
+        <p
+          className="mb-10"
+        >
+          Looking for a remote job and/or freelance projects?
+          <br />
+          Let us help you out:
+        </p>
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="fields"
+          >
+            <input
+              onChange={[Function]}
+              placeholder="NAME"
+              required={true}
+              type="text"
+              value=""
+            />
+            <input
+              onChange={[Function]}
+              placeholder="EMAIL"
+              required={true}
+              type="email"
+              value=""
+            />
+            <input
+              onChange={[Function]}
+              placeholder="CV"
+              required={true}
+              type="file"
+            />
+            <input
+              onChange={[Function]}
+              placeholder="PORTFOLIO"
+              type="file"
+            />
+          </div>
+          <div
+            className="checkboxes"
+          >
+            <div
+              className="checkbox"
+            >
+              <label>
+                <span>
+                  I agree with your
+                   
+                  <a
+                    href="/privacy-policy"
+                    onClick={[Function]}
+                    onMouseEnter={[Function]}
+                  >
+                    Privacy Policy
+                  </a>
+                </span>
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  required={true}
+                  type="checkbox"
+                />
+                <span
+                  className="checkmark"
+                />
+              </label>
+            </div>
+            <div
+              className="checkbox"
+            >
+              <label>
+                I want to receive regular updates, regarding similar and higher-paid job opportunities in the future.
+                <input
+                  checked={false}
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="checkmark"
+                />
+              </label>
+            </div>
+          </div>
+          <button
+            className="big secondary flex-initial"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+      <div
+        className="flex-1 flex items-start"
+      >
+        <div
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "margin": 0,
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "position": "relative",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "display": "block",
+                "maxWidth": "100%",
+              }
+            }
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjgwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style={
+                Object {
+                  "border": "none",
+                  "display": "block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "padding": 0,
+                }
+              }
+            />
+          </div>
+          <img
+            alt="remote section illustration"
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              alt="remote section illustration"
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Ftest-file-stub&w=1920&q=75"
+              srcSet="/_next/image?url=%2Ftest-file-stub&w=828&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=1920&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </div>
+      </div>
+    </div>
+  </section>,
+  <section
+    id="privacy"
+  >
+    <div
+      className="container mx-auto px-10 pt-10 flex flex-col items-center"
+    >
+      <h2
+        className="my-10"
+      >
+        Privacy
+      </h2>
+      <p
+        className="text-center mb-20"
+      >
+        Our activities are GDPR-compliant. In fact, we are also a registered Personal Data Administrator. To get the full picture of how we handle your data, please read our
+         
+        <a
+          href="/privacy-policy"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Privacy Statement
+        </a>
+        .
+      </p>
+      <div
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "margin": 0,
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "block",
+              "maxWidth": "100%",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            style={
+              Object {
+                "border": "none",
+                "display": "block",
+                "margin": 0,
+                "maxWidth": "100%",
+                "padding": 0,
+              }
+            }
+          />
+        </div>
+        <img
+          alt="remote section illustration"
+          data-nimg="intrinsic"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="remote section illustration"
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="/_next/image?url=%2Ftest-file-stub&w=1200&q=75"
+            srcSet="/_next/image?url=%2Ftest-file-stub&w=640&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=1200&q=75 2x"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </div>
+    </div>
+  </section>,
+  <section
+    id="contact"
+  >
+    <div
+      className="container mx-auto flex flex-col flex-1"
+    >
+      <div
+        className="mt-20 mb-10 mr-10 ml-32"
+      >
+        <h2
+          className="my-10 text-red-500 text-3xl"
+        >
+          Strings IT Recruitment
+          <br />
+          4 Iskar Str. 1000 Sofia, Bulgaria
+        </h2>
+        <p
+          className="mb-4"
+        >
+          dobromir@pullthestrings.me
+          <br />
+          +359 883 368 980 (BG)
+        </p>
+        <div
+          className="networks mb-20"
+        >
+          <div
+            className="mr-2"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="linked logo"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="linked logo"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=64&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=32&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=64&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <div
+            className="mr-2"
+          >
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="twitter logo"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="twitter logo"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=64&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=32&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=64&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+          <div>
+            <div
+              style={
+                Object {
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "overflow": "hidden",
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "maxWidth": "100%",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                  style={
+                    Object {
+                      "border": "none",
+                      "display": "block",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "padding": 0,
+                    }
+                  }
+                />
+              </div>
+              <img
+                alt="facebook logo"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="facebook logo"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/_next/image?url=%2Ftest-file-stub&w=64&q=75"
+                  srcSet="/_next/image?url=%2Ftest-file-stub&w=32&q=75 1x, /_next/image?url=%2Ftest-file-stub&w=64&q=75 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </div>
+          </div>
+        </div>
+        <button
+          className="big mb-40"
+        >
+          Search jobs
+        </button>
+        <div
+          className="text-sm"
+        >
+          Strings 2021 © All rights reserved
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex-1 bg-cyan-100"
+    >
+      <div
+        style={
+          Object {
+            "height": "100%",
+            "width": "100%",
+          }
+        }
+      />
+    </div>
+  </section>,
+]
+`;
