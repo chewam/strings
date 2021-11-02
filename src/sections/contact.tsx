@@ -21,15 +21,15 @@ function Contact() {
           </p>
           <div className="networks mb-20">
             <div className="mr-2">
-              <Image width="32" height="32" alt="linked logo" src={linkedin} />
+              <Image width={32} height={32} alt="linked logo" src={linkedin} />
             </div>
             <div className="mr-2">
-              <Image width="32" height="32" alt="twitter logo" src={twitter} />
+              <Image width={32} height={32} alt="twitter logo" src={twitter} />
             </div>
             <div>
               <Image
-                width="32"
-                height="32"
+                width={32}
+                height={32}
                 src={facebook}
                 alt="facebook logo"
               />

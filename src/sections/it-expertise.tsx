@@ -21,8 +21,8 @@ function ITExpertise() {
             <div className="bracket">{"{"}</div>
             <div className="picto">
               <Image
-                width="150"
-                height="150"
+                width={150}
+                height={150}
                 src={expertise1}
                 alt="expertise section first illustration"
               />
@@ -36,8 +36,8 @@ function ITExpertise() {
             <div className="bracket">{"{"}</div>
             <div className="picto">
               <Image
-                width="150"
-                height="150"
+                width={150}
+                height={150}
                 src={expertise2}
                 alt="expertise section second illustration"
               />
@@ -51,8 +51,8 @@ function ITExpertise() {
             <div className="bracket">{"{"}</div>
             <div className="picto">
               <Image
-                width="150"
-                height="150"
+                width={150}
+                height={150}
                 src={expertise3}
                 alt="expertise section third illustration"
               />

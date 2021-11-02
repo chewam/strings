@@ -9,7 +9,7 @@ const JobsList = ({ jobs }: { jobs: Job[] }) => (
     {jobs.map((job, i: number) => (
       <div key={i} className="job flex items-center bg-cyan-100 mb-5 p-5">
         <div className="pr-4">
-          <Image width="64" height="64" src={phpLogo} alt="php logo" />
+          <Image width={64} height={64} src={phpLogo} alt="php logo" />
         </div>
         <div className="flex-1">
           <Preview job={job} />

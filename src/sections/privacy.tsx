@@ -18,8 +18,8 @@ function Privacy() {
           .
         </p>
         <Image
-          width="600"
-          height="450"
+          width={600}
+          height={450}
           src={privacy}
           alt="remote section illustration"
         />

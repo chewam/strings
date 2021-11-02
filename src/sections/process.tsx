@@ -14,8 +14,8 @@ function Process() {
           <div className="tile row-span-2">
             <div className="arrow mb-6 relative left-20 top-2">
               <Image
-                width="140"
-                height="140"
+                width={140}
+                height={140}
                 src={processArrow1}
                 alt="process section first arrow picto"
               />
@@ -34,8 +34,8 @@ function Process() {
           <div className="tile">
             <div className="arrow absolute z-10 ml-64 -mt-10">
               <Image
-                width="120"
-                height="120"
+                width={120}
+                height={120}
                 src={processArrow2}
                 alt="process section first arrow picto"
               />
@@ -63,8 +63,8 @@ function Process() {
           <div className="tile relative row-span-2">
             <div className="arrow relative -left-24 top-4 mb-6">
               <Image
-                width="140"
-                height="140"
+                width={140}
+                height={140}
                 src={processArrow3}
                 alt="process section first arrow picto"
               />
@@ -78,8 +78,8 @@ function Process() {
           </div>
           <div className="col-span-2 flex justify-center">
             <Image
-              width="400"
-              height="400"
+              width={400}
+              height={400}
               src={process}
               alt="process section illustration"
             />

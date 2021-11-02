@@ -18,8 +18,8 @@ function Remote() {
         </div>
         <div className="flex-1 flex items-start">
           <Image
-            width="800"
-            height="800"
+            width={800}
+            height={800}
             src={remote}
             alt="remote section illustration"
           />

@@ -12,8 +12,8 @@ function Team() {
           <div className="tile">
             <div className="picture">
               <Image
-                width="150"
-                height="150"
+                width={150}
+                height={150}
                 src={team1}
                 alt="first team member picture"
               />
@@ -35,8 +35,8 @@ function Team() {
           <div className="tile">
             <div className="picture">
               <Image
-                width="150"
-                height="150"
+                width={150}
+                height={150}
                 src={team2}
                 alt="second team member picture"
               />

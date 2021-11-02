@@ -7,7 +7,7 @@ function Header({ noBackground = false }: { noBackground?: boolean }) {
   return (
     <header className={noBackground ? "no-background" : ""}>
       <div className="container mx-auto flex items-center">
-        <Image width="120" height="120" alt="company logo" src={logo} />
+        <Image width={120} height={120} alt="company logo" src={logo} />
         <nav className="flex-1 flex justify-evenly">
           <Link href="/">
             <a>Home</a>

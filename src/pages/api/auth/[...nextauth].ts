@@ -12,7 +12,9 @@ export default NextAuth({
   session: {
     jwt: true,
   },
-  jwt: {},
+  jwt: {
+    signingKey: process.env.JWT_SIGNING_PRIVATE_KEY,
+  },
   pages: {},
   callbacks: {},
   events: {},
